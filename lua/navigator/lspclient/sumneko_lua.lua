@@ -80,7 +80,7 @@ local function sumneko_lua()
     luadev = l.setup(luadevcfg)
   end
 
-  sumneko_cfg = vim.tbl_deep_extend('force', luadev, sumneko_cfg)
+  sumneko_cfg = vim.tbl_deep_extend('force', sumneko_cfg, luadev)
   return sumneko_cfg
 end
 
